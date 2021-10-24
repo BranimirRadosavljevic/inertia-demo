@@ -1,6 +1,5 @@
 <template>
-    <Layout>
-        <h1 class="text-3xl">Users</h1>
+      <h1 class="text-3xl">Users</h1>
 
     <div style='margin-top: 800px;'>
         <p>The current time is {{ time }}.</p>
@@ -9,16 +8,10 @@
             Refresh
         </Link>
     </div>
-    </Layout>
 </template>
 
 <script>
-import Layout from "../Shared/Layout";
-import { Link } from '@inertiajs/inertia-vue3';
-
-export default {
-   components: { Layout, Link },
-
+export default { 
    props: {
        time: String
    }
